@@ -379,7 +379,7 @@ z-index: 0;
 }
 
 .hero-badge::before {
-    content: 'ॐ';
+    content: '🔱';
     font-size: 12px;
 }
 
