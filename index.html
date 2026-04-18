@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Char Dham Yatra — Sacred Journey India</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav id="mainNav">
+  <a href="#" class="nav-logo" aria-label="CharDham home">
+    <div class="nav-logo-icon" aria-hidden="true">🕉</div>
+    <span class="nav-logo-text">Char<span>Dham</span></span>
+  </a>
+
+  <ul class="nav-links" role="list">
+    <li><a href="#dhams">The Dhams</a></li>
+    <li><a href="#packages">Packages</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact" class="nav-cta">Plan Yatra</a></li>
+  </ul>
+
+  <!-- CHANGE: added aria-label + aria-expanded for accessibility -->
+  <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()"
+          aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ══ MOBILE MENU ══ -->
+<nav class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+  <a href="#dhams"    onclick="toggleMenu()">The Dhams</a>
+  <a href="#packages" onclick="toggleMenu()">Packages</a>
+  <a href="#gallery"  onclick="toggleMenu()">Gallery</a>
+  <a href="#about"    onclick="toggleMenu()">About</a>
+  <a href="#contact"  class="btn-primary" onclick="toggleMenu()">🕉 Plan Yatra</a>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero" aria-label="Hero banner">
+  <div class="hero-bg" role="img" aria-label="Himalayan mountain landscape">
+  <span class="slide s1"></span>
+  <span class="slide s2"></span>
+  <span class="slide s3"></span>
+  <span class="slide s4"></span>
+</div>
+  <div class="hero-content">
+    <div class="hero-badge">Sacred Journeys Since 2008</div>
+    <h1 class="hero-title">
+      Four Sacred<br>
+      <em>Abodes of God</em><br>
+      Await You
+    </h1>
+    <p class="hero-subtitle">
+      Walk the ancient trails of the Himalayas. Seek blessings at Yamunotri, Gangotri,
+      Kedarnath &amp; Badrinath — the holiest pilgrimage of a lifetime.
+    </p>
+    <div class="hero-actions">
+      <a href="#packages" class="btn-primary">✦ Explore Packages</a>
+      <a href="#dhams"    class="btn-ghost">Discover the Dhams</a>
+    </div>
+  </div>
+
+  <!-- Stat cards — hidden on mobile via CSS -->
+  <aside class="hero-stats" aria-label="Key statistics">
+    <div class="stat-card">
+      <div class="stat-num">12K+</div>
+      <div class="stat-label">Pilgrims Guided</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">4.9★</div>
+      <div class="stat-label">Average Rating</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">15+</div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+  </aside>
+</section>
+
+<!-- ══ MARQUEE ══ -->
+<div class="marquee-bar" aria-hidden="true">
+  <div class="marquee-inner">
+    <span class="marquee-item">Yamunotri  <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Gangotri   <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Kedarnath  <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Badrinath  <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Sacred Himalayas <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Uttarakhand <span class="marquee-dot">✦</span></span>
+    <!-- duplicate for seamless loop -->
+    <span class="marquee-item">Yamunotri  <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Gangotri   <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Kedarnath  <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Badrinath  <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Sacred Himalayas <span class="marquee-dot">✦</span></span>
+    <span class="marquee-item">Uttarakhand <span class="marquee-dot">✦</span></span>
+  </div>
+</div>
+
+<!-- ══ THE DHAMS ══ -->
+<section class="dhams-section" id="dhams">
+  <div class="dhams-header">
+    <div>
+      <div class="section-tag">The Sacred Four</div>
+      <h2 class="section-title">Char Dham —<br><em>A Path to Moksha</em></h2>
+    </div>
+    <p class="section-sub" style="color:rgba(248,240,224,0.52)">
+      Nestled high in the Garhwal Himalayas, each dham holds ancient power
+      and timeless spiritual significance.
+    </p>
+  </div>
+
+  <div class="dhams-grid">
+    <article class="dham-card fade-up">
+      <div class="dham-alt" style="background-image:url('https://temple.yatradham.org/public/Product/temple/temple_fO4FL40m_202506241837100.webp')"></div>
+      <div class="dham-overlay">
+        <span class="dham-tag">3,293 m Altitude</span>
+        <div class="dham-name">Yamunotri</div>
+        <div class="dham-desc">Source of River Yamuna · Goddess Yamuna's abode</div>
+      </div>
+    </article>
+    <article class="dham-card fade-up fade-up-d1">
+      <div class="dham-alt" style="background-image:url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/45/3b/da/the-main-temple.jpg?w=1200&h=1200&s=1')"></div>
+      <div class="dham-overlay">
+        <span class="dham-tag">3,100 m Altitude</span>
+        <div class="dham-name">Gangotri</div>
+        <div class="dham-desc">Origin of Holy Ganga · Goddess Ganga's temple</div>
+      </div>
+    </article>
+    <article class="dham-card fade-up fade-up-d2">
+      <div class="dham-alt" style="background-image:url('https://images.unsplash.com/photo-1712733900711-d0b929d0d7cc?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8a2VkYXJuYXRoJTIwdGVtcGxlfGVufDB8fDB8fHww')"></div>
+      <div class="dham-overlay">
+        <span class="dham-tag">3,583 m Altitude</span>
+        <div class="dham-name">Kedarnath</div>
+        <div class="dham-desc">Lord Shiva's sacred Jyotirlinga · Majestic snow peaks</div>
+      </div>
+    </article>
+    <article class="dham-card fade-up fade-up-d3">
+      <div class="dham-alt" style="background-image:url('https://cdn.pixabay.com/photo/2017/09/23/19/07/vishnu-temple-2779856_640.jpg')"></div>
+      <div class="dham-overlay">
+        <span class="dham-tag">3,133 m Altitude</span>
+        <div class="dham-name">Badrinath</div>
+        <div class="dham-desc">Lord Vishnu's divine shrine · Gateway to Vaikuntha</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ══ PACKAGES ══ -->
+<section class="packages-section" id="packages">
+  <div class="packages-header">
+    <div class="section-tag">Handcrafted Journeys</div>
+    <h2 class="section-title">Choose Your <em>Sacred Path</em></h2>
+  </div>
+
+  <div class="packages-grid">
+    <!-- Package 1 -->
+    <article class="pkg-card fade-up">
+      <div class="pkg-img-wrap">
+        <div class="pkg-img" style="background-image:url('https://www.chardham.in/uploads/char-dham-yatra-connectivity.jpg')"></div>
+        <div class="pkg-img-overlay"></div>
+        <span class="pkg-duration">🗓 10 Nights / 11 Days</span>
+      </div>
+      <div class="pkg-body">
+        <div class="pkg-route">Haridwar → All 4 Dhams</div>
+        <div class="pkg-name">Classic Char Dham Yatra</div>
+        <ul class="pkg-inclusions">
+          <li>AC Hotel + Dharamshala Stays</li>
+          <li>Sightseeing &amp; Temple Darshan</li>
+          <li>Breakfast &amp; Dinner Daily</li>
+          <li>Dedicated Pujari Assistance</li>
+        </ul>
+        <div class="pkg-footer">
+          <div>
+            <div class="pkg-price-label">Starting from</div>
+            <div class="pkg-price">₹28,999 <span>/ person</span></div>
+          </div>
+          <button class="pkg-book-btn" onclick="openBooking()">Book Now →</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Package 2 FEATURED -->
+    <article class="pkg-card featured fade-up fade-up-d1">
+      <div class="pkg-featured-badge">✦ Most Popular</div>
+      <div class="pkg-img-wrap">
+        <div class="pkg-img" style="background-image:url('https://www.chardham.in/uploads/chardhanyatra.JPG')"></div>
+        <div class="pkg-img-overlay"></div>
+        <span class="pkg-duration">🗓 13 Nights / 14 Days</span>
+      </div>
+      <div class="pkg-body">
+        <div class="pkg-route">Delhi → All 4 Dhams → Rishikesh</div>
+        <div class="pkg-name">Luxury Himalayan Yatra</div>
+        <ul class="pkg-inclusions">
+          <li>4-Star Hotels &amp; Heritage Resorts</li>
+          <li>Helicopter Option at Kedarnath</li>
+          <li>All Meals Included</li>
+          <li>Personal Priest &amp; Puja Samagri</li>
+          <li>Rishikesh Ganga Aarti Evening</li>
+        </ul>
+        <div class="pkg-footer">
+          <div>
+            <div class="pkg-price-label">Starting from</div>
+            <div class="pkg-price">₹52,499 <span>/ person</span></div>
+          </div>
+          <button class="pkg-book-btn" onclick="openBooking()">Book Now →</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Package 3 -->
+    <article class="pkg-card fade-up fade-up-d2">
+      <div class="pkg-img-wrap">
+        <div class="pkg-img" style="background-image:url('https://www.sacredyatra.com/images/do-dham-kedarnath-badrinath-helicopter-package-ex-dehradun.webp')"></div>
+        <div class="pkg-img-overlay"></div>
+        <span class="pkg-duration">🗓 6 Nights / 7 Days</span>
+      </div>
+      <div class="pkg-body">
+        <div class="pkg-route">Haridwar → Kedarnath + Badrinath</div>
+        <div class="pkg-name">Do Dham by Helicopter</div>
+        <ul class="pkg-inclusions">
+          <li>Helicopter Transfers Both Dhams</li>
+          <li>Luxury Hotel Stays</li>
+          <li>VIP Darshan Pass</li>
+          <li>All Meals + Pandit Ji</li>
+        </ul>
+        <div class="pkg-footer">
+          <div>
+            <div class="pkg-price-label">Starting from</div>
+            <div class="pkg-price">₹38,999 <span>/ person</span></div>
+          </div>
+          <button class="pkg-book-btn" onclick="openBooking()">Book Now →</button>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ══ GALLERY ══ -->
+<section class="gallery-section" id="gallery">
+  <!-- FIX: wrapped heading + subtitle in a single flex row so header layout is correct -->
+  <div class="gallery-header">
+    <div>
+      <div class="section-tag">Spiritual Diaries</div>
+      <h2 class="section-title">Moments of Faith from the<br><em>Char Dham Yatra</em></h2>
+    </div>
+    <p class="section-sub">
+      अनुभव, आस्था और हिमालय की गोद में बसी एक दिव्य यात्रा।
+    </p>
+  </div>
+
+  <div class="gallery-grid">
+    <div class="gallery-cell">
+      <div class="gallery-cell-img" style="background-image:url('https://images.timesnownews.com/photo/msid-109192861/109192861.jpg')"></div>
+      <div class="gallery-cell-overlay"></div>
+    </div>
+    <div class="gallery-cell">
+      <div class="gallery-cell-img" style="background-image:url('https://images.pexels.com/photos/29905263/pexels-photo-29905263/free-photo-of-river-ganga-aarti-ritual-in-rishikesh-india.jpeg?w=800')"></div>
+      <div class="gallery-cell-overlay"></div>
+    </div>
+    <div class="gallery-cell">
+      <div class="gallery-cell-img" style="background-image:url('https://images.unsplash.com/photo-1566109973814-e4aaef3f2b51?w=800&q=80')"></div>
+      <div class="gallery-cell-overlay"></div>
+    </div>
+    <div class="gallery-cell">
+      <div class="gallery-cell-img" style="background-image:url('https://i0.wp.com/trekonindia.com/wp-content/uploads/2024/12/avi-theret-2u6eLolV1JY-unsplash-1.jpg?w=700')"></div>
+      <div class="gallery-cell-overlay"></div>
+    </div>
+    <div class="gallery-cell">
+      <div class="gallery-cell-img" style="background-image:url('https://www.stayvista.com/blog/wp-content/uploads/2024/05/rishu-bhosale-8Y0Ql4SjGfY-unsplash-768x1024.jpg')"></div>
+      <div class="gallery-cell-overlay"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHY CHOOSE US ══ -->
+<section class="why-section" id="about">
+  <div class="why-grid">
+    <div>
+      <div class="section-tag" style="color:var(--gold-light)">
+        Why Choose Us
+      </div>
+      <h2 class="section-title">We Don't Just<br><em>Plan Trips —</em><br>We Create Darshan</h2>
+      <p class="section-sub">
+        Every pilgrimage we craft is a deeply personal spiritual journey, curated with
+        reverence, expertise, and genuine care for your sacred experience.
+      </p>
+      <div class="why-features">
+        <div class="why-card fade-up">
+          <!-- <div class="why-icon">
+            <img src="https://images.unsplash.com/photo-1722067488346-c9bb68d4c1c1?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmFkcmluYXRoJTIwdGVtcGxlfGVufDB8fDB8fHww" alt="Mountain Guide">
+          </div> -->
+          <div class="why-card-title">Expert Mountain Guides</div>
+          <div class="why-card-text">Local Himalayan experts who know every trail, weather pattern, and sacred spot.</div>
+        </div>
+        <div class="why-card fade-up fade-up-d1">
+          <!-- <div class="why-icon">
+            <img src="images/mountain.png" alt="Mountain Guide">
+          </div> -->
+          <div class="why-card-title">Personal Pandit Ji</div>
+          <div class="why-card-text">Dedicated priest for rituals, puja, and mantras at each of the four dhams.</div>
+        </div>
+        <div class="why-card fade-up fade-up-d2">
+          <!-- <div class="why-icon">
+            <img src="images/mountain.png" alt="Mountain Guide">
+          </div> -->
+          <div class="why-card-title">Helicopter Options</div>
+          <div class="why-card-text">Helicopter yatra packages for senior pilgrims or those seeking comfort.</div>
+        </div>
+        <div class="why-card fade-up fade-up-d3">
+          <!-- <div class="why-icon">
+            <img src="images/mountain.png" alt="Mountain Guide">
+          </div> -->
+          <div class="why-card-title">24×7 Support</div>
+          <div class="why-card-text">Round-the-clock assistance throughout your entire sacred journey.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="why-visual">
+      <div class="why-visual-img"></div>
+      <!-- <div class="why-visual-card"> -->
+        <!-- <div class="why-visual-avatar">🙏</div>
+        <div class="why-visual-info">
+          <div class="why-visual-name">Completed 2024 Yatra</div>
+          <div class="why-visual-sub">12,000+ pilgrims guided safely</div>
+        </div>
+        <div class="why-visual-rating">★★★★★</div> -->
+      </div>
+    </div>
+  </div> -->
+</section>
+
+<!-- ══ TESTIMONIALS ══ -->
+<section class="testimonials-section">
+  <div class="testimonials-header">
+    <div>
+      <div class="section-tag">Traveller Murmurs</div>
+      <h2 class="section-title">Words from<br><em>Our Pilgrims</em></h2>
+    </div>
+    <p class="section-sub">
+      Thousands have walked the sacred path with us. Here's what they carry home.
+    </p>
+  </div>
+
+  <div class="testimonials-grid">
+    <article class="testimonial-card fade-up">
+      <div class="test-stars">★★★★★</div>
+      <p class="test-text">"The Char Dham Yatra with this team was transcendental. Every detail was handled — from the helicopter at Kedarnath to the Ganga aarti at Gangotri. Truly a life-changing experience."</p>
+      <div class="test-author">
+        <div class="test-avatar">R</div>
+        <div>
+          <div class="test-name">Rajesh Sharma</div>
+          <div class="test-location">New Delhi, India</div>
+        </div>
+      </div>
+    </article>
+    <article class="testimonial-card fade-up fade-up-d1">
+      <div class="test-stars">★★★★★</div>
+      <p class="test-text">"As senior citizens, we were worried about the Himalayan trek. But the team arranged everything perfectly — the palanquin, the hotel, the warm meals. We felt safe and blessed throughout."</p>
+      <div class="test-author">
+        <div class="test-avatar">S</div>
+        <div>
+          <div class="test-name">Sudha &amp; Mohan Verma</div>
+          <div class="test-location">Jaipur, Rajasthan</div>
+        </div>
+      </div>
+    </article>
+    <article class="testimonial-card fade-up fade-up-d2">
+      <div class="test-stars">★★★★★</div>
+      <p class="test-text">"From icy mornings at Yamunotri to sunset prayers at Badrinath — every moment felt divine. The dedicated pandit ji made the pujas so meaningful. Will definitely return next year."</p>
+      <div class="test-author">
+        <div class="test-avatar">P</div>
+        <div>
+          <div class="test-name">Priya Nair</div>
+          <div class="test-location">Bengaluru, Karnataka</div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ══ CTA ══ -->
+<section class="cta-section" id="contact">
+  <div class="cta-inner">
+    <div class="section-tag cta-tag">Begin Your Pilgrimage</div>
+    <h2 class="cta-title">Ready to Walk the<br><em>Sacred Mountains?</em></h2>
+    <p class="cta-sub">
+      Your Char Dham Yatra starts with one call. Let us craft a journey your soul
+      will remember forever.
+    </p>
+    <div class="cta-actions">
+      <a href="tel:+919876543210" class="btn-primary">📞 Call +91 98765 43210</a>
+      <a href="https://wa.me/919876543210" class="btn-ghost">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="wa-icon">
+  WhatsApp Us
+</a>
+    </div>
+    <p class="cta-note">Free consultation &bull; No booking fees &bull; Flexible cancellation</p>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <a href="#" class="nav-logo" style="margin-bottom:0">
+        <div class="nav-logo-icon">🕉</div>
+        <span class="nav-logo-text">Char<span>Dham</span></span>
+      </a>
+      <p class="footer-tagline">"जय बदरी विशाल।<br>Seek the divine, find yourself."</p>
+      <div class="footer-social">
+        <a class="social-btn" href="#" aria-label="Facebook">f</a>
+        <a class="social-btn" href="#" aria-label="LinkedIn">in</a>
+        <a class="social-btn" href="#" aria-label="YouTube">yt</a>
+        <a class="social-btn" href="#" aria-label="Instagram">ig</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Packages</div>
+      <ul class="footer-links">
+        <li><a href="#">Classic Char Dham Yatra</a></li>
+        <li><a href="#">Luxury Himalayan Yatra</a></li>
+        <li><a href="#">Do Dham by Helicopter</a></li>
+        <li><a href="#">Budget Group Yatra</a></li>
+        <li><a href="#">Senior Citizen Special</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="footer-col-title">The Dhams</div>
+      <ul class="footer-links">
+        <li><a href="#">Yamunotri</a></li>
+        <li><a href="#">Gangotri</a></li>
+        <li><a href="#">Kedarnath</a></li>
+        <li><a href="#">Badrinath</a></li>
+        <li><a href="#">Rishikesh &amp; Haridwar</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Connect</div>
+      <ul class="footer-links">
+        <li><a href="tel:+919876543210">+91 98765 xxxxx</a></li>
+        <li><a href="mailto:yatra@chardham.in">yatra@chardham.in</a></li>
+        <li><a href="#">Haridwar, Uttarakhand</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Blog &amp; Travel Tips</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 CharDham Yatra Tours. All rights reserved. <b>Jayant Developers</b>
+    </p>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cancellation Policy</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ══ BOOKING MODAL ══ -->
+<div id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-inner">
+    <button class="modal-close" onclick="closeBooking()" aria-label="Close booking form">✕</button>
+    <div class="modal-icon" aria-hidden="true">🕉</div>
+    <h3 class="modal-title" id="modalTitle">Begin Your Yatra</h3>
+    <p class="modal-sub">Our team will call you within 2 hours</p>
+    <div class="modal-form">
+      <input class="modal-input" type="text"  placeholder="Full Name"    autocomplete="name">
+      <input class="modal-input" type="tel"   placeholder="Phone Number" autocomplete="tel">
+      <select class="modal-input" style="cursor:pointer">
+        <option value="">Select Package</option>
+        <option>Classic Char Dham Yatra — ₹28,999</option>
+        <option>Luxury Himalayan Yatra — ₹52,499</option>
+        <option>Do Dham by Helicopter — ₹38,999</option>
+      </select>
+      <button class="btn-primary modal-submit" onclick="submitBooking()">🕉 Request Callback</button>
+    </div>
+  </div>
+</div>
+</body>
+<script src="index.js"></script>
+</html>
